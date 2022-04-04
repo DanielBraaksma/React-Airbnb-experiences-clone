@@ -1,7 +1,7 @@
 import Navbar from "./components/Navbar"
 import Hero from "./components/Hero"
 import Card from "./components/Card"
-import Katie from "./images/katie-zaferes.png"
+// import Katie from "./images/katie-zaferes.png"
 
 export default function App() {
     // <Hero />
@@ -9,7 +9,7 @@ return (
 <div>
     <Navbar />
     <Card
-        img={Katie}
+        img="katie-zaferes.png"
         rating="5.0"
         reviewCount={6}
         country="USA"
