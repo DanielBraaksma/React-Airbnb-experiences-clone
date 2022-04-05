@@ -11,6 +11,7 @@ export default function App() {
             <Card
                 key={item.id}
                 item={item} //send the object as a prop
+                // {...item} an alternative way to spread props individually like first method
             />
         )
     })
@@ -18,7 +19,9 @@ export default function App() {
     return (
         <div>
             <Navbar />
-            {cards}
+            <section className="cards-list">
+                {cards}
+            </section>
         </div>
     )
 }
